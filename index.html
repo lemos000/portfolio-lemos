@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Gabriel Lemos</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -30,18 +31,14 @@
       <div class="home-content">
         <h3>Hello, I am</h3>
         <h1>Gabriel Lemos</h1>
-        <h3>And I'm a <span>Back-end Developer</span></h3>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
-          Seasoned technology professional with extensive experience in
-          technical support and process automation, specializing in backend
-          development using Java and cloud infrastructure solutions. Skilled in
-          cloud migration strategies, microservices architecture, and CI/CD
-          pipelines, with proven expertise in designing scalable architectures
-          and optimizing business processes. Passionate about leveraging cloud
-          technologies while maintaining a strong focus on security and cost
-          optimization, collaborating with cross-functional teams to deliver
-          robust, high-performance solutions that align with business
-          objectives.
+          Experienced technology professional specializing in backend
+          development with Java and cloud infrastructure. Skilled in cloud
+          migration, microservices, and CI/CD pipelines, with a strong focus on
+          security, scalability, and cost optimization. Passionate about
+          streamlining business processes and collaborating with
+          cross-functional teams to deliver high-performance solutions.
         </p>
 
         <div class="social-media">
@@ -84,7 +81,6 @@
           new challenges and opportunities to apply my knowledge and contribute
           to the success of innovative projects.
         </p>
-        <a href="#" class="btn">Read More</a>
       </div>
     </section>
 
@@ -186,7 +182,9 @@
               and stability, while a logging system was implemented to simplify
               monitoring and maintenance.
             </p>
-            <a href="https://github.com/lemos000/tomcat-sustentability-api.git" target="_blank"
+            <a
+              href="https://github.com/lemos000/tomcat-sustentability-api.git"
+              target="_blank"
               ><i class="bx bx-link-external"></i
             ></a>
           </div>
@@ -197,24 +195,24 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form form action="https://formsubmit.co/lemosgabriel2016@gmail.com" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Adress" />
-        </div>
-
-        <div class="input-box">
-          <input type="number" placeholder="Número de telegone" />
-          <input type="text" placeholder="Email Subject" />
+          <input required type="text" name="name" placeholder="Full Name" />
+          <input  required type="email" name="email" placeholder="Email Adress" />
+        </div>      
         </div>
         <textarea
-          name=""
           id=""
           cols="30"
           rows="10"
-          placeholder="Sua mensagem:"
+          placeholder="Message"
+          name="message"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <button type="submit" value="Send Message" name="Send message" class="btn" >Send message</button>
+
+        <input type="hidden" name="_subject" value="Novo contato">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
       </form>
     </section>
 
@@ -231,7 +229,9 @@
     <!-- scroll animação -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <!-- js detalhes -->
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
